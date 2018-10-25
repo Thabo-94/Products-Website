@@ -1,0 +1,133 @@
+﻿<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Products</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="assets/css/style-projects.css">
+        
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    </head>
+
+
+    <body>
+        <!-- Header -->
+
+        <nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand wow fadeInDownBig" href="index.html"><img src="assets/img/slider/Office.png" width="100" alt="Office"></a>
+                </div>
+
+                <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="active">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"><span>Contact Us</span></a>
+                        </li>
+                        <li>
+                            <a href="Cart.html">Add to Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--End Header -->
+        <!-- Main Container -->
+        <div class="row container-kamn">
+            <img src="assets/img/slider/slide1.jpg" class="blog-post" alt="Feature-img" align="right" width="100%">
+        </div>
+        <div id="banners"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-8">
+                    <h3 class="lead" id="anchor1">ABOUT US </h3><hr>
+                    <p>
+                        La Vita Living Products is a multi-level sales company that supports indepenedent distributors engaged in selling our products.Distributors are encouraged to build networks of distributors and expand their businesses.We offer training sessions to give our distributors the necessary skills for starting their own businesses and work according to a Profit Plan that encourages members to always aim higher.
+                    </p>
+                    <h4>OUR HISTORY</h4>
+                    <p>La Vita was established in 1995.From the humble beginnings of the first branch in Sunny Park,Pretoria,the company has now expanded to nine branches nationwide.The branches are spread across Gauteng,North West,Limpopo,Kwa Zulu Natal and the Free State</p>
+                    <h4>OUR LOGO</h4>
+                    <p>The La Vita Living Products logo is of a seagull to new flying heights and was inspired by the book johnathan Livingston Seagull by Richard Bach.The book is about a seagull with dreams bigger than the rest of his flock.</p>
+
+                </div>
+            </div>
+        </div>
+        <!--End Main Container -->
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3><i class="fa fa-map-marker"></i> Contact US</h3>
+                        <p class="footer-contact">
+                            PO BOX 75492<br>
+                            Lynwood Ridge<br>
+                            Email: info@lvlp.co.za<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="copyright text center">
+            <p>&copy; Copyright 2018,  Theme by <a href="" target="_blank">Thabo Matue</a></p>
+        </div>
+
+
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <script type="text/javascript">
+$(function () {
+                $('a[href*=#]:not([href=#])').click(function () {
+                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                });
+            });</script>
+    </body>
+</html>

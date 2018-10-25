@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<meta charset="utf-8" />
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Products</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="assets/css/style-projects.css">
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    </head>
+   
+    <body>
+        <nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand wow fadeInDownBig" href="index.html"><img src="assets/img/slider/Office.png" width="100" alt="Office"></a>
+                </div>
+
+                <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="active">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"><span>Contact Us</span></a>
+                        </li>
+                        <li>
+                            <a href="Cart.html">Add to Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1>Shopping Cart</h1>
+
+        <div class="shopping-cart">
+
+            <div class="column-labels">
+                <label class="product-image">Image</label>
+                <label class="product-details">Product</label>
+                <label class="product-price">Price</label>
+                <label class="product-quantity">Quantity</label>
+                <label class="product-removal">Remove</label>
+                <label class="product-line-price">Total</label>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="https://s.cdpn.io/3/dingo-dog-bones.jpg">
+                </div>
+                <div class="product-details">
+                    <div class="product-title">Dingo Dog Bones</div>
+                    <p class="product-description">The best dog bones of all time. Holy crap. Your dog will be begging for these things! I got curious once and ate one myself. I'm a fan.</p>
+                </div>
+                <div class="product-price">12.99</div>
+                <div class="product-quantity">
+                    <input type="number" value="2" min="1">
+                </div>
+                <div class="product-removal">
+                    <button class="remove-product">
+                        Remove
+                    </button>
+                </div>
+                <div class="product-line-price">25.98</div>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="https://s.cdpn.io/3/large-NutroNaturalChoiceAdultLambMealandRiceDryDogFood.png">
+                </div>
+                <div class="product-details">
+                    <div class="product-title">Nutro™ Adult Lamb and Rice Dog Food</div>
+                    <p class="product-description">Who doesn't like lamb and rice? We've all hit the halal cart at 3am while quasi-blackout after a night of binge drinking in Manhattan. Now it's your dog's turn!</p>
+                </div>
+                <div class="product-price">45.99</div>
+                <div class="product-quantity">
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="product-removal">
+                    <button class="remove-product">
+                        Remove
+                    </button>
+                </div>
+                <div class="product-line-price">45.99</div>
+            </div>
+
+            <div class="totals">
+                <div class="totals-item">
+                    <label>Subtotal</label>
+                    <div class="totals-value" id="cart-subtotal">71.97</div>
+                </div>
+                <div class="totals-item">
+                    <label>Tax (5%)</label>
+                    <div class="totals-value" id="cart-tax">3.60</div>
+                </div>
+                <div class="totals-item">
+                    <label>Shipping</label>
+                    <div class="totals-value" id="cart-shipping">15.00</div>
+                </div>
+                <div class="totals-item totals-item-total">
+                    <label>Grand Total</label>
+                    <div class="totals-value" id="cart-total">90.57</div>
+                </div>
+            </div>
+
+            <button class="checkout">Checkout</button>
+
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3><i class="fa fa-map-marker"></i> Contact US</h3>
+                        <p class="footer-contact">
+                            PO BOX 75492<br>
+                            Lynwood Ridge<br>
+                            Email: info@lvlp.co.za<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="copyright text center">
+            <p>&copy; Copyright 2018,  Theme by <a href="" target="_blank">Thabo Matue</a></p>
+        </div>
+    </body>
+</html>
+<script>
+    /* Set rates + misc */
+    var taxRate = 0.05;
+    var shippingRate = 15.00;
+    var fadeTime = 300;
+
+
+    /* Assign actions */
+    $('.product-quantity input').change(function () {
+        updateQuantity(this);
+    });
+
+    $('.product-removal button').click(function () {
+        removeItem(this);
+    });
+
+
+    /* Recalculate cart */
+    function recalculateCart() {
+        var subtotal = 0;
+
+        /* Sum up row totals */
+        $('.product').each(function () {
+            subtotal += parseFloat($(this).children('.product-line-price').text());
+        });
+
+        /* Calculate totals */
+        var tax = subtotal * taxRate;
+        var shipping = (subtotal > 0 ? shippingRate : 0);
+        var total = subtotal + tax + shipping;
+
+        /* Update totals display */
+        $('.totals-value').fadeOut(fadeTime, function () {
+            $('#cart-subtotal').html(subtotal.toFixed(2));
+            $('#cart-tax').html(tax.toFixed(2));
+            $('#cart-shipping').html(shipping.toFixed(2));
+            $('#cart-total').html(total.toFixed(2));
+            if (total == 0) {
+                $('.checkout').fadeOut(fadeTime);
+            } else {
+                $('.checkout').fadeIn(fadeTime);
+            }
+            $('.totals-value').fadeIn(fadeTime);
+        });
+    }
+
+
+    /* Update quantity */
+    function updateQuantity(quantityInput) {
+        /* Calculate line price */
+        var productRow = $(quantityInput).parent().parent();
+        var price = parseFloat(productRow.children('.product-price').text());
+        var quantity = $(quantityInput).val();
+        var linePrice = price * quantity;
+
+        /* Update line price display and recalc cart totals */
+        productRow.children('.product-line-price').each(function () {
+            $(this).fadeOut(fadeTime, function () {
+                $(this).text(linePrice.toFixed(2));
+                recalculateCart();
+                $(this).fadeIn(fadeTime);
+            });
+        });
+    }
+
+
+    /* Remove item from cart */
+    function removeItem(removeButton) {
+        /* Remove row from DOM and recalc cart total */
+        var productRow = $(removeButton).parent().parent();
+        productRow.slideUp(fadeTime, function () {
+            productRow.remove();
+            recalculateCart();
+        });
+    }
+</script>
